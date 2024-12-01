@@ -3,6 +3,7 @@ import HomeMain from "./Compo/HomeMain";
 import LoginMain from "./LoginMain";
 import SignUp from "./SignUp";
 import FootBar from "./Compo/FootBar";
+import Scan from "./Scan";
 import {createBrowserRouter , RouterProvider } from 'react-router-dom'
 
 
@@ -19,7 +20,10 @@ function App() {
     },{
       path : "/Sign-up",
       element : <><NavbarWeb/><SignUp/><FootBar/></>,
-    },
+    },{
+      path : "/Scan",
+      element : <><NavbarWeb/><Scan/><FootBar/></>,
+    }
   ])
 
   return(
